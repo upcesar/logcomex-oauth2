@@ -14,6 +14,7 @@ POST | http://www.logcomexlogin.local/oauth/token
 - Clone the repo using git command: `git clone git@github.com:upcesar/logcomex-oauth2.git`. Project files are copied into the new folder `logcomex-oauth2`.
 - Create a new Homestead VM. For further instructions about creating the environment: https://laravel.com/docs/5.4/homestead
 - Once downloaded the Homestead VM, edit the file `src/stubs/Homestead.yaml` to setup folders, sites and databases
+
 `
 folders:
     - map: ~/my/laravel/folders
@@ -30,7 +31,8 @@ sites:
 databases:
     - logcomex
 `
-- Execute `vagrant ssh`
+- Execute in Homestead folder `bash init.sh` (Linux / Git Bash) or `init.bat` (Windows Cmd or Powershell).
+- Execute `vagrant up` and then `vagrant ssh`. If VM was previously created, execute `vagrant provision` or `vagrant reload --provision` instead.
 - In the VM (guest) go to the folder `cd ~/Code/logcomex-oauth2` and then `artisan migrate && artisan passport:client --password`
 - When tables related with oath are created, you will be prompted "What should we name the password grant client?". Type the desired name or just leave it blank and press Enter.
 - Finally, you will get the "client_id" and "client_secret". These informations are stored in "oauth_clients" table.
