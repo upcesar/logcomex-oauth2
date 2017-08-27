@@ -17,10 +17,12 @@ POST | http://www.logcomexlogin.local/oauth/token
 
 `
 folders:
+
     - map: ~/my/laravel/folders
       to: /home/vagrant/Code
 
 sites:
+
     - map: logcomexlogin.local
       to: /home/vagrant/Code/my/laravel/folders/logcomex-oauth2/public
       
@@ -29,6 +31,7 @@ sites:
     
 
 databases:
+
     - logcomex
 `
 - Execute in Homestead folder `bash init.sh` (Linux / Git Bash) or `init.bat` (Windows Cmd or Powershell).
