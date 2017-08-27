@@ -66,7 +66,9 @@ If user is created with success, a JSON is rendered as follows:
     "message": "usuário registrado com sucesso"
 }
 `
+
 Otherwise:
+
 `
 {
     "status": "error",
