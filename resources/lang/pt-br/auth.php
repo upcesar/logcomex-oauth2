@@ -15,5 +15,6 @@ return [
 
     'failed' => 'As informações de login não foram encontradas.',
     'throttle' => 'Muitas tentativas de login. Por favor tente novamente em :seconds segundos.',
-
+    'unauth' => 'Não autenticado.',
+    'The user credentials were incorrect.' => 'As credenciais de usuários são incorretas',
 ];
