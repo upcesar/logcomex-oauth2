@@ -163,7 +163,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        
         /*
          * Package Service Providers...
          */
@@ -181,7 +181,15 @@ return [
         /*
          * Passport Service for Oauth2...
          */        
-        Laravel\Passport\PassportServiceProvider::class
+        Laravel\Passport\PassportServiceProvider::class,
+        
+        /*
+         * CORS Providers...
+         */
+        Barryvdh\Cors\ServiceProvider::class,
+
+        
+        
 
     ],
 
